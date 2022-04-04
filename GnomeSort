@@ -4,7 +4,7 @@ public class GnomeSort {
 
     public static void main(String[] args) {
         int[] array = new int[10];
-        int n = array.length, numberOfIterations = 0;
+        int n = array.length;
         Random random = new Random();
         System.out.print("The output array is:\n[");
         /* Making of the array */
@@ -23,8 +23,6 @@ public class GnomeSort {
                 array[i] = array[i - 1];
                 array[i - 1] = buf;
 
-                numberOfIterations++;
-
                 i--;
                 if (i > 0) continue;
             }
@@ -40,6 +38,5 @@ public class GnomeSort {
                 System.out.print(array[i] + "  ");
             }
         }
-        System.out.print(" - Number of iterations: " + numberOfIterations);
     }
 }
