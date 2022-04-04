@@ -4,7 +4,7 @@ public class ShellSort {
 
     public static void main(String[] args) {
         int[] array = new int[10];
-        int n = array.length, numberOfIterations = 0;
+        int n = array.length;
         Random random = new Random();
         System.out.print("The output array is:\n[");
         /* Making of the array */
@@ -23,7 +23,6 @@ public class ShellSort {
                     if (x < array[j - d]) {
                         array[j] = array[j - d];
 
-                        numberOfIterations++;
                     } else break;
                 }
                 array[j] = x;
@@ -39,6 +38,5 @@ public class ShellSort {
                 System.out.print(array[i] + "  ");
             }
         }
-        System.out.print(" - Number of iterations: " + numberOfIterations);
     }
 }
