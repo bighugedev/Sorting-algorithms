@@ -4,7 +4,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] array = new int[10];
-        int n = array.length, numberOfIterations = 0;
+        int n = array.length;
         Random random = new Random();
         System.out.print("The output array is:\n[");
         /* Making of the array */
@@ -25,7 +25,6 @@ public class BubbleSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
-                numberOfIterations++;
             }
         }
 
@@ -38,6 +37,5 @@ public class BubbleSort {
                 System.out.print(array[i] + "  ");
             }
         }
-        System.out.print(" - Number of iterations: " + numberOfIterations);
     }
 }
