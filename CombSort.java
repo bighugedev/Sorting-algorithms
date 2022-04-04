@@ -4,7 +4,7 @@ public class CombSort {
 
     public static void main(String[] args) {
         int[] array = new int[10];
-        int n = array.length, numberOfIterations = 0;
+        int n = array.length;
         Random random = new Random();
         System.out.print("The output array is:\n[");
         /* Making of the array */
@@ -27,7 +27,6 @@ public class CombSort {
                     array[i+step] = temp;
                 }
             }
-            numberOfIterations++;
         }
 
         /* Array output */
@@ -39,6 +38,5 @@ public class CombSort {
                 System.out.print(array[i] + "  ");
             }
         }
-        System.out.print(" - Number of iterations: " + numberOfIterations);
     }
 }
